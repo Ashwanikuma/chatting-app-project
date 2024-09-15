@@ -15,16 +15,15 @@ export const sampleChats = [
   },
 ];
 
-const sampleUsers = [{
-  avatar: ["https://www.w3schools.com/howto/img_avatar.png"],
-  name: "John Boe",
-  _id: "2",
-},
-{
-  avatar: ["https://www.w3schools.com/howto/img_avatar.png"],
-  name: "John Boe",
-  _id: "2",
-
-}
-
-]
+export const sampleUsers = [
+  {
+    avatar: ["https://www.w3schools.com/howto/img_avatar.png"],
+    name: "John doe",
+    _id: "1",
+  },
+  {
+    avatar: ["https://www.w3schools.com/howto/img_avatar.png"],
+    name: "John Boe",
+    _id: "2",
+  },
+];
