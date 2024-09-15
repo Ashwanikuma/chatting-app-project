@@ -11,13 +11,13 @@ const ChatItem = ({
   isOnline,
   newMessageAlert,
   index = 0,
-  handleDeleteChatOpen,
+  handleDeleteChat,
 }) => {
   return (
     <Link
       sx={{ padding: "0" }}
       to={`/chat/${_id}`}
-      onContextMenu={(e) => handleDeleteChatOpen(e, _id, groupChat)}
+      onContextMenu={(e) => handleDeleteChat(e, _id, groupChat)}
     >
       <div
         style={{
