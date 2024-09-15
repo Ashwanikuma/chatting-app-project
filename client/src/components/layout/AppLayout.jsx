@@ -1,14 +1,15 @@
-//just to test commit
-
 import React from "react";
 import Header from "./Header";
 import Title from "../shared/Title";
 import { Grid } from "@mui/material";
 import ChatList from "../specific/ChatList";
 import { sampleChats } from "../constants/sampleData";
+import { useParams } from "react-router-dom";
 
 const AppLayout = () => (WrappedComponent) => {
   return (props) => {
+    const params = useParams();
+    const chatId = params.chatId;
     return (
       <div>
         <Title />
@@ -23,8 +24,8 @@ const AppLayout = () => (WrappedComponent) => {
           >
             <ChatList
               chats={sampleChats}
-              chatId={"1"}
-              newMessagesAlert={[{ chatId: "1", count: 4 }]}
+              chatId={chatId}
+              newMessagesAlert={[{ chatId, count: 4 }]}
               onlineUsers={["1", "2"]}
             />
           </Grid>
