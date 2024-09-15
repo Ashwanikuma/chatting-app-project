@@ -5,6 +5,7 @@ import {
   AlternateEmail as UserNameIcon,
   CalendarMonth as CalendarIcon,
 } from "@mui/icons-material";
+import moment from "moment";
 
 const Profile = () => {
   return (
@@ -31,7 +32,7 @@ const Profile = () => {
       />
       <ProfileCard
         heading={"Joined date"}
-        text={"ashwani kumar"}
+        text={moment("2023-12-31T18:30:00.000Z").fromNow()}
         Icon={<CalendarIcon />}
       />
     </Stack>
