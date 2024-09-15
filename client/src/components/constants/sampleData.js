@@ -7,7 +7,9 @@ export const sampleChats = [
     members: ["1", "2"],
   },
   {
-    avatar: ["https://www.w3schools.com/howto/img_avatar.png"],
+    avatar: ["https://www.w3schools.com/howto/img_avatar.png",
+
+    ],
     name: "John Boe",
     _id: "2",
     groupChat: false,
